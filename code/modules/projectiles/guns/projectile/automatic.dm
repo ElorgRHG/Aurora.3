@@ -435,9 +435,10 @@ ABSTRACT_TYPE(/obj/item/gun/projectile/automatic/rifle)
 	The weapon minimisese mechanical components, featuring electrical firing and priming mechanisms, a canted holographic sightsand rail for \
 	conventional sights, and other holographic user assistance systems. Expensive, perhaps over-engineered."
 	desc_extended = "The Jingya A-1 won a hard-fought victory in the ballistic side of the SCC Future Firearms contest hosted in 2463, which was also its first unveiling. This rifle is made to function where laser weaponry may be either too risky or not functional for the engagement at hand. It is the go-to ballistic armament of the Tau Ceti Armed Forces."
-	icon = 'icons/obj/guns/faction/nanotrasen_corporation/burst_rifle.dmi'
-	icon_state = "arx"
-	item_state = "arx"
+	icon = 'icons/obj/guns/faction/nanotrasen_corporation/jingya/jingya42x32.dmi'
+	icon_override = 'icons/obj/guns/faction/nanotrasen_corporation/jingya/jingya32x32.dmi'
+	icon_state = "jingya"
+	item_state = "jingya"
 	w_class = WEIGHT_CLASS_BULKY
 	force = 10
 	caliber = "a556"
@@ -461,9 +462,9 @@ ABSTRACT_TYPE(/obj/item/gun/projectile/automatic/rifle)
 /obj/item/gun/projectile/automatic/rifle/jingya/update_icon()
 	..()
 	if(ammo_magazine)
-		icon_state = "arx"
+		icon_state = "jingya"
 	else
-		icon_state = "arx-empty"
+		icon_state = "jingya-empty"
 
 /obj/item/gun/projectile/automatic/rifle/l6_saw
 	name = "\improper CA-75E LMG"
